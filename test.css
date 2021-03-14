@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e5e5e5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav {
+    background: #222222;
+    color: #fff;
+}
+
+nav .logo span {
+    color: tomato
+}
+
+nav .logo {
+    font-family: 'Charmonman', cursive;
+    flex-grow: 2;
+    text-align: center;
+}
+
+nav .logo:hover {
+    color: tomato;
+}
+
+.main-menu {
+    flex-grow: 7;
+    margin-left: 30px;
+}
+
+.main-menu li {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 10px;
+}
+
+.main-menu li a {
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: tomato;
+    padding: 5px;
+    transition: all 0.5s ease 0s;
+}
+
+.main-menu li a::after {
+    content: "";
+    width: 0%;
+    height: 0%;
+    background: tomato;
+    ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s ease 0s;
+    border-radius: 5px;
+}
+
+.main-menu li a:hover {
+    color: #fff;
+}
+
+.main-menu li a:hover::after {
+    width: 100%;
+    height: 10%;
+}
+
+.main-menu li a.active {
+    width: 100%;
+    height: 10%;
+}
+
+.surch-box {
+    flex-grow: 3;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.surch-box input {
+    padding: 5px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.surch-box input:hover {
+    border: 3px solid tomato;
+}
+
+.surch-box .icon {
+    font-size: 18px
+}
+
+.surch-box span:hover,
+.icon:hover {
+    color: tomato;
+}
+
+
+/* Heading Section Design start */
+
+.heading-container {
+    width: 100%;
+    height: 500px;
+    background: url(https://png.pngtree.com/thumb_back/fw800/back_pic/03/63/38/3557ac22d00a48c.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.heading-info {
+    width: 600px;
+    padding-top: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.heading-info h1 {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.heading-info p {
+    padding: 10px;
+    text-align: justify;
+    color: blue;
+}
+
+.heading-info a {
+    display: inline-block;
+    width: 140px;
+    padding: 5px 15px;
+    color: tomato;
+    text-decoration: none;
+    border: 2px solid tomato;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-left: 150px;
+}
+
+
+/* Planing Section Design Start */
+
+#learn-sys {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    text-shadow: 2px 2px 5px tomato;
+    text-decoration: underline;
+}
+
+.planing-container {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    background: url("https://thumbs.dreamstime.com/z/close-up-calendar-alarm-clock-green-table-background-planning-business-meeting-travel-concept-175828552.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.planing-container p {
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+.planing-container ul {
+    width: 40%;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.planing-container ul li {
+    list-style: none;
+    border-top: 2px solid #262626;
+    border-bottom: 2px solid #262626;
+    margin: -1px 0;
+    transition: 0.5s
+}
+
+.planing-container ul li:hover {
+    transform: translateX(25px);
+}
+
+.planing-container ul li a {
+    display: block;
+    border-right: 2px solid#262626;
+    text-decoration: none;
+    color: #262626;
+}
+
+.planing-container ul li a span {
+    display: inline-block;
+    position: relative;
+}
+
+.planing-container ul li a span:nth-child(1) {
+    width: 40px;
+    text-align: center;
+    border-left: 2px solid #262626;
+    border-right: 2px solid #262626;
+    color: #262626;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.planing-container ul li:hover a span:nth-child(1) {
+    background: tomato;
+}
+
+.planing-container ul li a span:nth-child(1)>i {
+    transition: 0.5s;
+}
+
+.planing-container ul li:hover a span:nth-child(1)>i {
+    transform: rotateY(360deg);
+    color: #fff;
+}
+
+.planing-container ul li a span:nth-child(2) {
+    margin: 0 auto;
+}
+
+.team {
+    background: url("http://www.janainalruqy.com/English/wp-content/uploads/2016/04/our-team-banner.jpg");
+    width: 100%;
+    height: 200px;
+}
+
+
+/* Profile */
+
+.profile-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-container {
+    width: 300px;
+    height: 450px;
+    background: #fff;
+    margin: 100px auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+    position: relative;
+}
+
+.img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -75px;
+    left: 75px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.card {
+    width: 100%;
+    background: #fff;
+    position: relative;
+    top: 75px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.card strong {
+    color: gray;
+    padding: 10px 0;
+}
+
+.card p {
+    text-align: justify;
+    padding: 0 10px;
+    color: gray;
+    margin-top: 15px;
+}
+
+.card p a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background: tomato;
+    color: white;
+    width: 150px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.card .fac {
+    font-size: 25px;
+    color: #0673E7;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.card .twi {
+    font-size: 25px;
+    color: #1DA1F2;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.card .you {
+    font-size: 25px;
+    color: red;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.footer-container {
+    background-color: #26272b;
+    color: #737373;
+}
+
+.footer-text {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.footer-text p {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.social-links span {
+    font-size: 30px;
+    padding: 5px;
+    display: inline-block;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.social-links span>i {
+    transition: 0.5s;
+}
+
+.social-links span>i:hover {
+    transform: rotateY(360deg);
+}
+
+.social-links span:nth-child(1):hover {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.social-links span:nth-child(2):hover {
+    background-color: #00aced;
+    color: #fff;
+}
+
+.social-links span:nth-child(3):hover {
+    background-color: #007bb6;
+    color: #fff;
+}
+
+.social-links span:nth-child(4):hover {
+    background-color: tomato;
+    color: #fff;
+}
